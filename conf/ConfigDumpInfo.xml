@@ -45,8 +45,8 @@
 		<Metadata name="CommonModule.ИнформационныеБазыКлиент.Module" id="2bacea91-9c61-494a-be39-dd56181e320f.0" configVersion="f8601607569c5146971915e76a3a093600000000"/>
 		<Metadata name="CommonModule.ИнформационныеБазыКлиентСервер" id="643fbba8-ab35-47ac-97d8-79310eb7d92c" configVersion="394c84d9c666b34abd51546f33d1fa6900000000"/>
 		<Metadata name="CommonModule.ИнформационныеБазыКлиентСервер.Module" id="643fbba8-ab35-47ac-97d8-79310eb7d92c.0" configVersion="41b2dee754382241b63360a1030b951b00000000"/>
-		<Metadata name="CommonModule.ИнформационныеБазыСлужебныйКлиент" id="7f01fb0a-f64c-49bc-a4b7-2958c46b0140" configVersion="6c683d469cc4094394d694ee480ce8e500000000"/>
-		<Metadata name="CommonModule.ИнформационныеБазыСлужебныйКлиент.Module" id="7f01fb0a-f64c-49bc-a4b7-2958c46b0140.0" configVersion="d6e1b5f4482fb84d997ebf2204e1c0fd00000000"/>
+		<Metadata name="CommonModule.ИнформационныеБазыСлужебныйКлиент" id="7f01fb0a-f64c-49bc-a4b7-2958c46b0140" configVersion="ff2f6fc4a7233f489928a725fbfb9d4500000000"/>
+		<Metadata name="CommonModule.ИнформационныеБазыСлужебныйКлиент.Module" id="7f01fb0a-f64c-49bc-a4b7-2958c46b0140.0" configVersion="26c3c98e88956043b890f71efe7b7b0200000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения" id="3433829d-c81b-42db-8edb-3ba376a995dd" configVersion="457c6c71abe864469683c130abdb77ba00000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="3433829d-c81b-42db-8edb-3ba376a995dd.0" configVersion="40533b119b07ea4eafce88a78108b5b900000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер" id="b26da108-5b6c-479c-9e05-7786d631e1e0" configVersion="1f8103519151504cb8de738ea328163700000000"/>
