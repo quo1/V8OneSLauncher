@@ -10,6 +10,11 @@
 			<EnableDrag>true</EnableDrag>
 			<DataPath>СписокИБ</DataPath>
 			<RowPictureDataPath>СписокИБ.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>ChangeHistory</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+			</CommandSet>
 			<ShowCommandBar>auto</ShowCommandBar>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -27,99 +32,8 @@
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокИБКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокИБКоманднаяПанель" id="3">
-				<Autofill>false</Autofill>
+				<AppearanceMode>CommandBar</AppearanceMode>
 				<ChildItems>
-					<ButtonGroup name="ПодгруппаОсновное" id="145">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа основное</v8:content>
-							</v8:item>
-						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа основное</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ПодгруппаОсновноеРасширеннаяПодсказка" id="146"/>
-						<ChildItems>
-							<Button name="СписокИБСоздать" id="62" DisplayImportance="VeryHigh">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.Create</CommandName>
-								<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-								<ExtendedTooltip name="СписокИБСоздатьРасширеннаяПодсказка" id="63"/>
-							</Button>
-							<Button name="СписокИБСоздатьГруппу" id="64" DisplayImportance="VeryHigh">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.CreateFolder</CommandName>
-								<Picture>
-									<xr:Ref>StdPicture.CreateFolder</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<ExtendedTooltip name="СписокИБСоздатьГруппуРасширеннаяПодсказка" id="65"/>
-							</Button>
-							<Button name="СписокИБСкопировать" id="66" DisplayImportance="VeryHigh">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.Copy</CommandName>
-								<ExtendedTooltip name="СписокИБСкопироватьРасширеннаяПодсказка" id="67"/>
-							</Button>
-							<Button name="СписокИБИзменить" id="68" DisplayImportance="VeryHigh">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.Change</CommandName>
-								<Picture>
-									<xr:Ref>StdPicture.Change</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<ExtendedTooltip name="СписокИБИзменитьРасширеннаяПодсказка" id="69"/>
-							</Button>
-							<Button name="СписокИБУдалить" id="72" DisplayImportance="VeryHigh">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.Delete</CommandName>
-								<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-								<ExtendedTooltip name="СписокИБУдалитьРасширеннаяПодсказка" id="73"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ПодгруппаПеренести" id="80">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа перенести</v8:content>
-							</v8:item>
-						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа перенести</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ПодгруппаПеренестиРасширеннаяПодсказка" id="81"/>
-						<ChildItems>
-							<Button name="СписокИБПеренестиЭлемент" id="74">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.MoveItem</CommandName>
-								<ExtendedTooltip name="СписокИБПеренестиЭлементРасширеннаяПодсказка" id="75"/>
-							</Button>
-							<Button name="СписокИБУровеньВверх" id="76">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.LevelUp</CommandName>
-								<ExtendedTooltip name="СписокИБУровеньВверхРасширеннаяПодсказка" id="77"/>
-							</Button>
-							<Button name="СписокИБУровеньВниз" id="78">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Item.СписокИБ.StandardCommand.LevelDown</CommandName>
-								<ExtendedTooltip name="СписокИБУровеньВнизРасширеннаяПодсказка" id="79"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
 					<ButtonGroup name="ПодгруппаПлатформа" id="136">
 						<Title>
 							<v8:item>
@@ -160,115 +74,6 @@
 								<ExtendedTooltip name="СписокИБОткрытьКонфигурациюРасширеннаяПодсказка" id="157"/>
 							</Button>
 						</ChildItems>
-					</ButtonGroup>
-					<Button name="СписокИБПолучитьНавигационнуюСсылку" id="82">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.СписокИБ.StandardCommand.GetURL</CommandName>
-						<ExtendedTooltip name="СписокИБПолучитьНавигационнуюСсылкуРасширеннаяПодсказка" id="83"/>
-					</Button>
-					<ButtonGroup name="ПодгруппаПрочее" id="100">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа прочее</v8:content>
-							</v8:item>
-						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа прочее</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ПодгруппаПрочееРасширеннаяПодсказка" id="101"/>
-						<ChildItems>
-							<Popup name="ПодменюВидСписка" id="92">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Вид</v8:content>
-									</v8:item>
-								</Title>
-								<ToolTip>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Подменю вид списка</v8:content>
-									</v8:item>
-								</ToolTip>
-								<Picture>
-									<xr:Ref>StdPicture.Document</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<ExtendedTooltip name="ПодменюВидСпискаРасширеннаяПодсказка" id="93"/>
-								<ChildItems>
-									<Button name="СписокИБСписок" id="94">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.List</CommandName>
-										<ExtendedTooltip name="СписокИБСписокРасширеннаяПодсказка" id="95"/>
-									</Button>
-									<Button name="СписокИБИерархическийСписок" id="96">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.HierarchicalList</CommandName>
-										<ExtendedTooltip name="СписокИБИерархическийСписокРасширеннаяПодсказка" id="97"/>
-									</Button>
-									<Button name="СписокИБДерево" id="98">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.Tree</CommandName>
-										<ExtendedTooltip name="СписокИБДеревоРасширеннаяПодсказка" id="99"/>
-									</Button>
-								</ChildItems>
-							</Popup>
-							<Popup name="ПодменюНастройкиСписка" id="90">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Настройки списка</v8:content>
-									</v8:item>
-								</Title>
-								<ToolTip>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Подменю настройки списка</v8:content>
-									</v8:item>
-								</ToolTip>
-								<Picture>
-									<xr:Ref>StdPicture.Setting</xr:Ref>
-									<xr:LoadTransparent>true</xr:LoadTransparent>
-								</Picture>
-								<ExtendedTooltip name="ПодменюНастройкиСпискаРасширеннаяПодсказка" id="91"/>
-								<ChildItems>
-									<Button name="СписокИБНастройкаСписка" id="84">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.ListSettings</CommandName>
-										<ExtendedTooltip name="СписокИБНастройкаСпискаРасширеннаяПодсказка" id="85"/>
-									</Button>
-									<Button name="СписокИБЗагрузитьНастройкиДинамическогоСписка" id="86">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.LoadDynamicListSettings</CommandName>
-										<ExtendedTooltip name="СписокИБЗагрузитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="87"/>
-									</Button>
-									<Button name="СписокИБСохранитьНастройкиДинамическогоСписка" id="88">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Item.СписокИБ.StandardCommand.SaveDynamicListSettings</CommandName>
-										<ExtendedTooltip name="СписокИБСохранитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="89"/>
-									</Button>
-								</ChildItems>
-							</Popup>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ПодгруппаОткрыть" id="130">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа открыть</v8:content>
-							</v8:item>
-						</Title>
-						<ToolTip>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Подгруппа открыть</v8:content>
-							</v8:item>
-						</ToolTip>
-						<ExtendedTooltip name="ПодгруппаОткрытьРасширеннаяПодсказка" id="131"/>
 					</ButtonGroup>
 				</ChildItems>
 			</AutoCommandBar>
