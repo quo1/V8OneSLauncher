@@ -62,7 +62,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.ИнформационныеБазы.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.ИнформационныеБазы.Form.ФормаГруппы</DefaultFolderForm>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.ИнформационныеБазы.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -555,6 +555,7 @@
 			</Attribute>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

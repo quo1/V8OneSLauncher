@@ -5,6 +5,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Table name="СписокИБ" id="1">
+			<Representation>Tree</Representation>
 			<SelectionMode>SingleRow</SelectionMode>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -32,7 +33,6 @@
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 			<ContextMenu name="СписокИБКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокИБКоманднаяПанель" id="3">
-				<AppearanceMode>CommandBar</AppearanceMode>
 				<ChildItems>
 					<ButtonGroup name="ПодгруппаПлатформа" id="136">
 						<Title>
