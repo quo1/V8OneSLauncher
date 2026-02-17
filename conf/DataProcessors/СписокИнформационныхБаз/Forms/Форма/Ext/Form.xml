@@ -13,6 +13,7 @@
 			<RowPictureDataPath>СписокИБ.DefaultPicture</RowPictureDataPath>
 			<CommandSet>
 				<ExcludedCommand>ChangeHistory</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>OutputList</ExcludedCommand>
 				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 			</CommandSet>
@@ -75,6 +76,19 @@
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
+					<Button name="СписокИБУдалитьИнформационнуюБазу" id="176">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УдалитьИнформационнуюБазу</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Удалить</v8:content>
+							</v8:item>
+						</Title>
+						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокИБУдалитьИнформационнуюБазуРасширеннаяПодсказка" id="177"/>
+					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокИБРасширеннаяПодсказка" id="4"/>
@@ -102,6 +116,9 @@
 				<ContextMenu name="СписокИБУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="СписокИБУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeDeleteRow">СписокИБПередУдалением</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="СписокИБНаименование" id="22">
 					<DataPath>СписокИБ.Description</DataPath>
@@ -205,6 +222,27 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьКонфигурацию</Action>
+		</Command>
+		<Command name="УдалитьИнформационнуюБазу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить информационную базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить информационную базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьИнформационнуюБазу</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">СписокИБ</AssociatedTableElementId>
 		</Command>
 	</Commands>
 	<CommandInterface>
