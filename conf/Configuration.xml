@@ -286,6 +286,7 @@
 			<CommandGroup>Настройки</CommandGroup>
 			<Constant>АдресTaskman</Constant>
 			<Constant>ПутьКФайлуСпискаИнформационныхБаз</Constant>
+			<CommonForm>ПутьКФайлуСпискаИнформационныхБаз</CommonForm>
 			<Catalog>ИнформационныеБазы</Catalog>
 			<Catalog>УчетныеДанные</Catalog>
 			<Catalog>ВерсииПлатформы</Catalog>

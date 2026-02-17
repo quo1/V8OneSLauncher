@@ -32,7 +32,7 @@
 				</v8:StringQualifiers>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ПутьКФайлуСпискаИнформационныхБаз</DefaultForm>
 			<ExtendedPresentation/>
 			<Explanation/>
 			<PasswordMode>false</PasswordMode>
