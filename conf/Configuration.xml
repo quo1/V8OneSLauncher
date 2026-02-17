@@ -267,7 +267,10 @@
 			<CommonModule>IniФайл</CommonModule>
 			<CommonModule>ИнформационныеБазыКлиентСервер</CommonModule>
 			<CommonModule>ИнформационныеБазы</CommonModule>
+			<CommonModule>ИнформационныеБазыВызовСервера</CommonModule>
 			<CommonModule>ИнформационныеБазыКлиент</CommonModule>
+			<CommonModule>ИнформационныеБазыСлужебный</CommonModule>
+			<CommonModule>ИнформационныеБазыСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебныйКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
