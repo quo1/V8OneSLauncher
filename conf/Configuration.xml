@@ -271,10 +271,10 @@
 			<CommonModule>ИнформационныеБазыКлиент</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебный</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ИнформационныеБазыСлужебныйКлиент</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ПлатформаКлиент</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентСерверЛокализация</CommonModule>
