@@ -13,6 +13,8 @@
 			<RowPictureDataPath>СписокИБ.DefaultPicture</RowPictureDataPath>
 			<CommandSet>
 				<ExcludedCommand>ChangeHistory</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
 				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>OutputList</ExcludedCommand>
 				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
@@ -35,6 +37,13 @@
 			<ContextMenu name="СписокИБКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокИБКоманднаяПанель" id="3">
 				<ChildItems>
+					<Button name="СписокИБСоздатьИБ" id="189">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьИБ</CommandName>
+						<RepresentationInContextMenu>None</RepresentationInContextMenu>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="СписокИБСоздатьИБРасширеннаяПодсказка" id="190"/>
+					</Button>
 					<ButtonGroup name="ПодгруппаПлатформа" id="136">
 						<Title>
 							<v8:item>
@@ -116,9 +125,6 @@
 				<ContextMenu name="СписокИБУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="СписокИБУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
-			<Events>
-				<Event name="BeforeDeleteRow">СписокИБПередУдалением</Event>
-			</Events>
 			<ChildItems>
 				<LabelField name="СписокИБНаименование" id="22">
 					<DataPath>СписокИБ.Description</DataPath>
@@ -249,6 +255,22 @@
 			<Action>УдалитьЭлемент</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">СписокИБ</AssociatedTableElementId>
+		</Command>
+		<Command name="СоздатьИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьИБ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 	<CommandInterface>
