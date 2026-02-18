@@ -76,9 +76,9 @@
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
-					<Button name="СписокИБУдалитьИнформационнуюБазу" id="176">
+					<Button name="СписокИБУдалитьЭлемент" id="176">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.УдалитьИнформационнуюБазу</CommandName>
+						<CommandName>Form.Command.УдалитьЭлемент</CommandName>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -87,7 +87,7 @@
 						</Title>
 						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
 						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="СписокИБУдалитьИнформационнуюБазуРасширеннаяПодсказка" id="177"/>
+						<ExtendedTooltip name="СписокИБУдалитьЭлементРасширеннаяПодсказка" id="177"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -223,24 +223,24 @@
 			</Picture>
 			<Action>ОткрытьКонфигурацию</Action>
 		</Command>
-		<Command name="УдалитьИнформационнуюБазу" id="3">
+		<Command name="УдалитьЭлемент" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить информационную базу</v8:content>
+					<v8:content>Удалить элемент</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить информационную базу</v8:content>
+					<v8:content>Удалить элемент</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.Delete</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>УдалитьИнформационнуюБазу</Action>
+			<Action>УдалитьЭлемент</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">СписокИБ</AssociatedTableElementId>
 		</Command>

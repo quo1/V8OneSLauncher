@@ -45,9 +45,9 @@
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<ChildItems>
-					<Button name="СписокУдалитьИБ" id="50">
+					<Button name="СписокЭлемент" id="50">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.УдалитьИБ</CommandName>
+						<CommandName>Form.Command.УдалитьЭлемент</CommandName>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -56,7 +56,7 @@
 						</Title>
 						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
 						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="СписокУдалитьИБРасширеннаяПодсказка" id="51"/>
+						<ExtendedTooltip name="СписокЭлементРасширеннаяПодсказка" id="51"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -134,24 +134,24 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="УдалитьИБ" id="1">
+		<Command name="УдалитьЭлемент" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить ИБ</v8:content>
+					<v8:content>Удалить элемент</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить ИБ</v8:content>
+					<v8:content>Удалить элемент</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
 				<xr:Ref>StdPicture.Delete</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>УдалитьИБ</Action>
+			<Action>УдалитьЭлемент</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
 			<SelectedRowsUse>DontUse</SelectedRowsUse>
