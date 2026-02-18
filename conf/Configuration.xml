@@ -275,7 +275,6 @@
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
-			<CommonModule>Платформа</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентСерверЛокализация</CommonModule>
