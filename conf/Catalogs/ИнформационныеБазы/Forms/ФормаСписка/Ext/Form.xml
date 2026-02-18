@@ -45,7 +45,7 @@
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<ChildItems>
-					<Button name="СписокЭлемент" id="50">
+					<Button name="СписокУдалитьЭлемент" id="50">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.УдалитьЭлемент</CommandName>
 						<Title>
@@ -56,7 +56,7 @@
 						</Title>
 						<RepresentationInContextMenu>AdditionalInContextMenu</RepresentationInContextMenu>
 						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="СписокЭлементРасширеннаяПодсказка" id="51"/>
+						<ExtendedTooltip name="СписокУдалитьЭлементРасширеннаяПодсказка" id="51"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
