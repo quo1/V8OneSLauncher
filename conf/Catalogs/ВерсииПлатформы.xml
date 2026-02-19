@@ -89,11 +89,11 @@
 		<ChildObjects>
 			<Attribute uuid="01b4cb78-4285-4d49-b424-2abbdc06adf7">
 				<Properties>
-					<Name>ПутьКФайлу</Name>
+					<Name>ПутьКПапке</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Путь к файлу</v8:content>
+							<v8:content>Путь к папке</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

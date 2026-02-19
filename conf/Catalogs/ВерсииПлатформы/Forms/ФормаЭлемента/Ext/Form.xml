@@ -18,7 +18,7 @@
 			<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<InputField name="ПутьКПапке" id="11">
-					<DataPath>Объект.ПутьКФайлу</DataPath>
+					<DataPath>Объект.ПутьКПапке</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПутьКПапкеКонтекстноеМеню" id="12"/>
