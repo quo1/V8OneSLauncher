@@ -289,7 +289,6 @@
 			<Catalog>ИнформационныеБазы</Catalog>
 			<Catalog>УчетныеДанные</Catalog>
 			<Catalog>ВерсииПлатформы</Catalog>
-			<Catalog>УчетныеДанныеСтороннихСервисов</Catalog>
 			<Enum>ТипыИнформационныхБаз</Enum>
 			<Enum>СкоростьСоединения</Enum>
 			<DataProcessor>СписокИнформационныхБаз</DataProcessor>

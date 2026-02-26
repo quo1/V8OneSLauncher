@@ -37,7 +37,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
+			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
