@@ -2,7 +2,51 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
 	<WindowOpeningMode>LockOwner</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ПодгруппаПлатформа" id="233">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подгруппа платформа</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подгруппа платформа</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ПодгруппаПлатформаРасширеннаяПодсказка" id="234"/>
+				<ChildItems>
+					<Button name="ФормаОткрытьПредприятие" id="231">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОткрытьПредприятие</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Предприятие</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаОткрытьПредприятиеРасширеннаяПодсказка" id="232"/>
+					</Button>
+					<Button name="ФормаОткрытьКонфигурацию" id="229">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОткрытьКонфигурацию</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конфигуратор</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаОткрытьКонфигурациюРасширеннаяПодсказка" id="230"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
@@ -270,6 +314,9 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="УчетныеДанныеПоУмолчаниюКонтекстноеМеню" id="122"/>
 							<ExtendedTooltip name="УчетныеДанныеПоУмолчаниюРасширеннаяПодсказка" id="123"/>
+							<Events>
+								<Event name="OnChange">УчетныеДанныеПоУмолчаниюПриИзменении</Event>
+							</Events>
 						</InputField>
 						<Table name="УчетныеДанные" id="147">
 							<Representation>List</Representation>
@@ -519,6 +566,50 @@
 			<Action>УстановитьУчетныеДанныеПоУмолчанию</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">УчетныеДанные</AssociatedTableElementId>
+		</Command>
+		<Command name="ОткрытьКонфигурацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигурацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигурацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+E</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Enum</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонфигурацию</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">1:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
+		</Command>
+		<Command name="ОткрытьПредприятие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть предприятие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть предприятие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+E</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.NestedTable</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПредприятие</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">1:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
 		</Command>
 	</Commands>
 </Form>
