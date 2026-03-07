@@ -30,7 +30,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
+			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
@@ -125,6 +125,9 @@
 				<ContextMenu name="СписокИБУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="СписокИБУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">СписокИБПриАктивизацииСтроки</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="СписокИБНаименование" id="22">
 					<DataPath>СписокИБ.Description</DataPath>
@@ -271,6 +274,7 @@
 			</ToolTip>
 			<Action>СоздатьИБ</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+			<ActionPurpose>Create</ActionPurpose>
 		</Command>
 	</Commands>
 	<CommandInterface>

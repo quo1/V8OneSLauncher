@@ -50,6 +50,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -126,6 +127,9 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="РодительКонтекстноеМеню" id="12"/>
 											<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="13"/>
+											<Events>
+												<Event name="OnChange">РодительПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Наименование" id="7">
 											<DataPath>Объект.Description</DataPath>
@@ -133,6 +137,9 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="НаименованиеКонтекстноеМеню" id="8"/>
 											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
+											<Events>
+												<Event name="OnChange">НаименованиеПриИзменении</Event>
+											</Events>
 										</InputField>
 										<UsualGroup name="ГруппаПрочее" id="131">
 											<Title>
@@ -155,12 +162,18 @@
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ПредупреждатьПередОткрытиемПредприятияКонтекстноеМеню" id="20"/>
 													<ExtendedTooltip name="ПредупреждатьПередОткрытиемПредприятияРасширеннаяПодсказка" id="21"/>
+													<Events>
+														<Event name="OnChange">ПредупреждатьПередОткрытиемПредприятияПриИзменении</Event>
+													</Events>
 												</CheckBoxField>
 												<CheckBoxField name="ЗапретитьОткрыватьКонфигуратор" id="15">
 													<DataPath>Объект.ЗапретитьОткрыватьКонфигуратор</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ЗапретитьОткрыватьКонфигураторКонтекстноеМеню" id="16"/>
 													<ExtendedTooltip name="ЗапретитьОткрыватьКонфигураторРасширеннаяПодсказка" id="17"/>
+													<Events>
+														<Event name="OnChange">ЗапретитьОткрыватьКонфигураторПриИзменении</Event>
+													</Events>
 												</CheckBoxField>
 											</ChildItems>
 										</UsualGroup>
@@ -241,6 +254,7 @@
 											<ContextMenu name="ПутьКПапкеКонтекстноеМеню" id="28"/>
 											<ExtendedTooltip name="ПутьКПапкеРасширеннаяПодсказка" id="29"/>
 											<Events>
+												<Event name="OnChange">ПутьКПапкеПриИзменении</Event>
 												<Event name="StartChoice">ПутьКПапкеНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -250,6 +264,9 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ИмяСервераКонтекстноеМеню" id="32"/>
 											<ExtendedTooltip name="ИмяСервераРасширеннаяПодсказка" id="33"/>
+											<Events>
+												<Event name="OnChange">ИмяСервераПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="ИмяБазыНаСервере" id="35">
 											<DataPath>Объект.ИмяБазыНаСервере</DataPath>
@@ -257,12 +274,18 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ИмяБазыНаСервереКонтекстноеМеню" id="36"/>
 											<ExtendedTooltip name="ИмяБазыНаСервереРасширеннаяПодсказка" id="37"/>
+											<Events>
+												<Event name="OnChange">ИмяБазыНаСервереПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="АдресВебСервера" id="68">
 											<DataPath>Объект.АдресВебСервера</DataPath>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="АдресВебСервераКонтекстноеМеню" id="69"/>
 											<ExtendedTooltip name="АдресВебСервераРасширеннаяПодсказка" id="70"/>
+											<Events>
+												<Event name="OnChange">АдресВебСервераПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="ВерсияПлатформы" id="43">
 											<DataPath>Объект.ВерсияПлатформы</DataPath>
@@ -270,6 +293,9 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="44"/>
 											<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="45"/>
+											<Events>
+												<Event name="OnChange">ВерсияПлатформыПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="СкоростьСоединения" id="39">
 											<DataPath>Объект.СкоростьСоединения</DataPath>
