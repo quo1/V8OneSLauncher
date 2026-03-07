@@ -271,6 +271,7 @@
 			</ToolTip>
 			<Action>СоздатьИБ</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+			<ActionPurpose>Create</ActionPurpose>
 		</Command>
 	</Commands>
 	<CommandInterface>
