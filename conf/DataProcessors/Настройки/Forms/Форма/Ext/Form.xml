@@ -1,6 +1,169 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<Page name="СтраницаОсновные" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОсновныеРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<CommandBar name="КоманднаяПанельСтраницыОсновная" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель страницы основная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель страницы основная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КоманднаяПанельСтраницыОсновнаяРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<Button name="ФормаСохранить" id="9">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.Сохранить</CommandName>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="10"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="НаборКонстантПутьКФайлуСпискаИнформационныхБаз" id="1">
+							<DataPath>НаборКонстант.ПутьКФайлуСпискаИнформационныхБаз</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаборКонстантПутьКФайлуСпискаИнформационныхБазКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаборКонстантПутьКФайлуСпискаИнформационныхБазРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">НаборКонстантПутьКФайлуСпискаИнформационныхБазПриИзменении</Event>
+								<Event name="StartChoice">НаборКонстантПутьКФайлуСпискаИнформационныхБазНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПлатформы" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платформы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница платформы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПлатформыРасширеннаяПодсказка" id="17"/>
+					<ChildItems>
+						<Table name="Платформы" id="18">
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>Платформы</DataPath>
+							<RowPictureDataPath>Платформы.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ПлатформыКонтекстноеМеню" id="19"/>
+							<AutoCommandBar name="ПлатформыКоманднаяПанель" id="20"/>
+							<ExtendedTooltip name="ПлатформыРасширеннаяПодсказка" id="21"/>
+							<SearchStringAddition name="ПлатформыСтрокаПоиска" id="22">
+								<AdditionSource>
+									<Item>Платформы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПлатформыСтрокаПоискаКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ПлатформыСтрокаПоискаРасширеннаяПодсказка" id="24"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПлатформыСостояниеПросмотра" id="25">
+								<AdditionSource>
+									<Item>Платформы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПлатформыСостояниеПросмотраКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ПлатформыСостояниеПросмотраРасширеннаяПодсказка" id="27"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПлатформыУправлениеПоиском" id="28">
+								<AdditionSource>
+									<Item>Платформы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПлатформыУправлениеПоискомКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="ПлатформыУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПлатформыНаименование" id="39">
+									<DataPath>Платформы.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПлатформыНаименованиеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ПлатформыНаименованиеРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<LabelField name="ПлатформыКод" id="43">
+									<DataPath>Платформы.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПлатформыКодКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ПлатформыКодРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="ПлатформыПутьКПапке" id="47">
+									<DataPath>Платформы.ПутьКПапке</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ПлатформыПутьКПапкеКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ПлатформыПутьКПапкеРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
@@ -8,5 +171,81 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
+		<Attribute name="НаборКонстант" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Платформы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Платформы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ВерсииПлатформы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДанныеСтраницыОсновнаяМодифицированы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные страницы основная модифицированы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сохранить</Action>
+		</Command>
+	</Commands>
 </Form>

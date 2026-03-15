@@ -59,7 +59,7 @@
 		<Command name="DataProcessor.СписокИнформационныхБаз.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
-		<Command name="Constant.АдресTaskman.StandardCommand.Open">
+		<Command name="100:52cfb3f5-0f2d-426b-a78c-529fbe53adb6">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="Constant.ПутьКФайлуСпискаИнформационныхБаз.StandardCommand.Open">
