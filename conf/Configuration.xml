@@ -283,7 +283,6 @@
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonCommand>ОткрытьНастройки</CommonCommand>
 			<CommandGroup>Настройки</CommandGroup>
-			<Constant>АдресTaskman</Constant>
 			<Constant>ПутьКФайлуСпискаИнформационныхБаз</Constant>
 			<CommonForm>ПутьКФайлуСпискаИнформационныхБаз</CommonForm>
 			<Catalog>ИнформационныеБазы</Catalog>
