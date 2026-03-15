@@ -20,9 +20,13 @@
 				<InputField name="ПутьКПапке" id="11">
 					<DataPath>Объект.ПутьКПапке</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПутьКПапкеКонтекстноеМеню" id="12"/>
 					<ExtendedTooltip name="ПутьКПапкеРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="StartChoice">ПутьКПапкеНачалоВыбора</Event>
+					</Events>
 				</InputField>
 				<InputField name="Код" id="20">
 					<DataPath>Объект.Code</DataPath>
