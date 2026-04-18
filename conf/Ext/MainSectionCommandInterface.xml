@@ -11,12 +11,17 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="0:a0008393-713f-4523-95fc-f425a0d5b7e8">
+		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
+		<Command name="Catalog.Серверы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Кластеры.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -31,11 +36,15 @@
 			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
-		<Command name="0:a0008393-713f-4523-95fc-f425a0d5b7e8">
+		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
 			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
-		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
+		<Command name="Catalog.Серверы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Настройки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Кластеры.StandardCommand.OpenList">
 			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
@@ -50,16 +59,16 @@
 		<Command name="Catalog.УчетныеДанные.StandardCommand.OpenList">
 			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 		</Command>
-		<Command name="0:a0008393-713f-4523-95fc-f425a0d5b7e8">
-			<CommandGroup>CommandGroup.Настройки</CommandGroup>
-		</Command>
 		<Command name="Catalog.ИнформационныеБазы.StandardCommand.OpenList">
 			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 		</Command>
-		<Command name="DataProcessor.СписокИнформационныхБаз.StandardCommand.Open">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
+		<Command name="Catalog.Серверы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Настройки</CommandGroup>
 		</Command>
-		<Command name="100:52cfb3f5-0f2d-426b-a78c-529fbe53adb6">
+		<Command name="Catalog.Кластеры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Настройки</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СписокИнформационныхБаз.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="Constant.ПутьКФайлуСпискаИнформационныхБаз.StandardCommand.Open">

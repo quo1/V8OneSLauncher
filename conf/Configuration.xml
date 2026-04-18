@@ -287,6 +287,8 @@
 			<CommonForm>ПутьКФайлуСпискаИнформационныхБаз</CommonForm>
 			<Catalog>ВерсииПлатформы</Catalog>
 			<Catalog>ИнформационныеБазы</Catalog>
+			<Catalog>Кластеры</Catalog>
+			<Catalog>Серверы</Catalog>
 			<Catalog>УчетныеДанные</Catalog>
 			<Enum>ТипыИнформационныхБаз</Enum>
 			<Enum>СкоростьСоединения</Enum>

@@ -258,14 +258,13 @@
 												<Event name="StartChoice">ПутьКПапкеНачалоВыбора</Event>
 											</Events>
 										</InputField>
-										<InputField name="ИмяСервера" id="31">
-											<DataPath>Объект.ИмяСервера</DataPath>
-											<EditMode>EnterOnInput</EditMode>
+										<InputField name="Сервер" id="258">
+											<DataPath>Объект.Сервер</DataPath>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ИмяСервераКонтекстноеМеню" id="32"/>
-											<ExtendedTooltip name="ИмяСервераРасширеннаяПодсказка" id="33"/>
+											<ContextMenu name="СерверКонтекстноеМеню" id="259"/>
+											<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="260"/>
 											<Events>
-												<Event name="OnChange">ИмяСервераПриИзменении</Event>
+												<Event name="OnChange">СерверПриИзменении</Event>
 											</Events>
 										</InputField>
 										<InputField name="ИмяБазыНаСервере" id="35">
