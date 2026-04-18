@@ -285,9 +285,9 @@
 			<CommandGroup>Настройки</CommandGroup>
 			<Constant>ПутьКФайлуСпискаИнформационныхБаз</Constant>
 			<CommonForm>ПутьКФайлуСпискаИнформационныхБаз</CommonForm>
+			<Catalog>ВерсииПлатформы</Catalog>
 			<Catalog>ИнформационныеБазы</Catalog>
 			<Catalog>УчетныеДанные</Catalog>
-			<Catalog>ВерсииПлатформы</Catalog>
 			<Enum>ТипыИнформационныхБаз</Enum>
 			<Enum>СкоростьСоединения</Enum>
 			<DataProcessor>СписокИнформационныхБаз</DataProcessor>
