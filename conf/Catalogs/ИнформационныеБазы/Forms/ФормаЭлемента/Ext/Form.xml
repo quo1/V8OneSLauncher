@@ -31,18 +31,57 @@
 						</Title>
 						<ExtendedTooltip name="ФормаОткрытьПредприятиеРасширеннаяПодсказка" id="232"/>
 					</Button>
-					<Button name="ФормаОткрытьКонфигурацию" id="229">
-						<Type>CommandBarButton</Type>
-						<Representation>PictureAndText</Representation>
-						<CommandName>Form.Command.ОткрытьКонфигурацию</CommandName>
+					<Popup name="ФормаПодменюКонфигуратор" id="284">
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
 								<v8:content>Конфигуратор</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ФормаОткрытьКонфигурациюРасширеннаяПодсказка" id="230"/>
-					</Button>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма подменю конфигуратор</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>StdPicture.Enum</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Representation>PictureAndText</Representation>
+						<ExtendedTooltip name="ФормаПодменюКонфигураторРасширеннаяПодсказка" id="285"/>
+						<ChildItems>
+							<Button name="ФормаОткрытьКонфигурацию" id="229">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Command.ОткрытьКонфигурацию</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запустить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ФормаОткрытьКонфигурациюРасширеннаяПодсказка" id="230"/>
+							</Button>
+							<Button name="ФормаСтатусСеансаСКонфигуратором" id="286">
+								<Type>CommandBarButton</Type>
+								<Enabled>false</Enabled>
+								<CommandName>Form.Command.СтатусСеансаСКонфигуратором</CommandName>
+								<ExtendedTooltip name="ФормаСтатусСеансаСКонфигураторомРасширеннаяПодсказка" id="287"/>
+							</Button>
+							<Button name="ФормаОбновитьОтображениеСтатусаСеансаСКонфигуратором" id="311">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОбновитьОтображениеСтатусаСеансаСКонфигуратором</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Обновить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ФормаОбновитьОтображениеСтатусаСеансаСКонфигураторомРасширеннаяПодсказка" id="312"/>
+							</Button>
+						</ChildItems>
+					</Popup>
 				</ChildItems>
 			</ButtonGroup>
 		</ChildItems>
@@ -607,7 +646,7 @@
 			</ToolTip>
 			<Shortcut>Ctrl+Shift+E</Shortcut>
 			<Picture>
-				<xr:Ref>StdPicture.Enum</xr:Ref>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьКонфигурацию</Action>
@@ -635,6 +674,39 @@
 			<Action>ОткрытьПредприятие</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">1:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
+		</Command>
+		<Command name="СтатусСеансаСКонфигуратором" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сеанса с конфигуратором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сеанса с конфигуратором</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ОбновитьОтображениеСтатусаСеансаСКонфигуратором" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить отображение статуса сеанса с конфигуратором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить отображение статуса сеанса с конфигуратором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьОтображениеСтатусаСеансаСКонфигуратором</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -271,6 +271,7 @@
 			<CommonModule>ИнформационныеБазыКлиент</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебный</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебныйВызовСервера</CommonModule>
+			<CommonModule>КонсольКластераКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
@@ -281,6 +282,8 @@
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныйСписокИнформационныхБаз</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>ФайловаяБаза</CommonModule>
+			<ScheduledJob>ПолучениеСтатусовСеансовКонфигураторов</ScheduledJob>
 			<CommonCommand>ОткрытьНастройки</CommonCommand>
 			<CommandGroup>Настройки</CommandGroup>
 			<Constant>ПутьКФайлуСпискаИнформационныхБаз</Constant>
@@ -295,6 +298,7 @@
 			<DataProcessor>СписокИнформационныхБаз</DataProcessor>
 			<DataProcessor>Настройки</DataProcessor>
 			<DataProcessor>ИмпортСтандартногоСписка</DataProcessor>
+			<InformationRegister>СтатусыСеансовКонфигураторов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -130,7 +130,7 @@
 			</Events>
 			<ChildItems>
 				<LabelField name="СписокИБНаименование" id="22">
-					<DataPath>СписокИБ.Description</DataPath>
+					<DataPath>СписокИБ.Наименование</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СписокИБНаименованиеКонтекстноеМеню" id="23"/>
@@ -149,6 +149,17 @@
 					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="СписокИБВерсияПлатформыКонтекстноеМеню" id="59"/>
 					<ExtendedTooltip name="СписокИБВерсияПлатформыРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="СписокИБПредставлениеБлокировкиКонфигуратора" id="202">
+					<DataPath>СписокИБ.ПредставлениеБлокировкиКонфигуратора</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигуратор</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СписокИБПредставлениеБлокировкиКонфигуратораКонтекстноеМеню" id="203"/>
+					<ExtendedTooltip name="СписокИБПредставлениеБлокировкиКонфигуратораРасширеннаяПодсказка" id="204"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -171,8 +182,128 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ИнформационныеБазы.Ссылка КАК Ссылка,
+	ИнформационныеБазы.ПометкаУдаления КАК ПометкаУдаления,
+	ИнформационныеБазы.Родитель КАК Родитель,
+	ИнформационныеБазы.ЭтоГруппа КАК ЭтоГруппа,
+	ИнформационныеБазы.Код КАК Код,
+	ИнформационныеБазы.Наименование КАК Наименование,
+	ИнформационныеБазы.Идентификатор КАК Идентификатор,
+	ИнформационныеБазы.ЗапретитьОткрыватьКонфигуратор КАК ЗапретитьОткрыватьКонфигуратор,
+	ИнформационныеБазы.ПредупреждатьПередОткрытиемПредприятия КАК ПредупреждатьПередОткрытиемПредприятия,
+	ИнформационныеБазы.Тип КАК Тип,
+	ИнформационныеБазы.ПутьКПапке КАК ПутьКПапке,
+	ИнформационныеБазы.Сервер КАК Сервер,
+	ИнформационныеБазы.ИмяБазыНаСервере КАК ИмяБазыНаСервере,
+	ИнформационныеБазы.СкоростьСоединения КАК СкоростьСоединения,
+	ИнформационныеБазы.ВерсияПлатформы КАК ВерсияПлатформы,
+	ИнформационныеБазы.ИмпортированоИзСтандартногоСписка КАК ИмпортированоИзСтандартногоСписка,
+	ИнформационныеБазы.АдресВебСервера КАК АдресВебСервера,
+	ИнформационныеБазы.УчетныеДанныеПоУмолчанию КАК УчетныеДанныеПоУмолчанию,
+	ИнформационныеБазы.Предопределенный КАК Предопределенный,
+	ИнформационныеБазы.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ВЫБОР
+		КОГДА НЕ СтатусыСеансовКонфигураторов.ЕстьСеанс ЕСТЬ NULL И СтатусыСеансовКонфигураторов.ЕстьСеанс
+			ТОГДА "Занят: " + СтатусыСеансовКонфигураторов.Хост
+		ИНАЧЕ ""
+	КОНЕЦ КАК ПредставлениеБлокировкиКонфигуратора
+ИЗ
+	Справочник.ИнформационныеБазы КАК ИнформационныеБазы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусыСеансовКонфигураторов КАК СтатусыСеансовКонфигураторов
+		ПО (СтатусыСеансовКонфигураторов.ИнформационнаяБаза = ИнформационныеБазы.Ссылка)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПредупреждатьПередОткрытиемПредприятия</dcssch:dataPath>
+					<dcssch:field>ПредупреждатьПередОткрытиемПредприятия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Идентификатор</dcssch:dataPath>
+					<dcssch:field>Идентификатор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапретитьОткрыватьКонфигуратор</dcssch:dataPath>
+					<dcssch:field>ЗапретитьОткрыватьКонфигуратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Тип</dcssch:dataPath>
+					<dcssch:field>Тип</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПутьКПапке</dcssch:dataPath>
+					<dcssch:field>ПутьКПапке</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сервер</dcssch:dataPath>
+					<dcssch:field>Сервер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяБазыНаСервере</dcssch:dataPath>
+					<dcssch:field>ИмяБазыНаСервере</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкоростьСоединения</dcssch:dataPath>
+					<dcssch:field>СкоростьСоединения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВерсияПлатформы</dcssch:dataPath>
+					<dcssch:field>ВерсияПлатформы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмпортированоИзСтандартногоСписка</dcssch:dataPath>
+					<dcssch:field>ИмпортированоИзСтандартногоСписка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АдресВебСервера</dcssch:dataPath>
+					<dcssch:field>АдресВебСервера</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УчетныеДанныеПоУмолчанию</dcssch:dataPath>
+					<dcssch:field>УчетныеДанныеПоУмолчанию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПредставлениеБлокировкиКонфигуратора</dcssch:dataPath>
+					<dcssch:field>ПредставлениеБлокировкиКонфигуратора</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление блокировки конфигуратора</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
 				<MainTable>Catalog.ИнформационныеБазы</MainTable>
 				<ListSettings>
 					<dcsset:filter>
