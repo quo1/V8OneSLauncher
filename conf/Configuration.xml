@@ -271,6 +271,7 @@
 			<CommonModule>ИнформационныеБазыКлиент</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебный</CommonModule>
 			<CommonModule>ИнформационныеБазыСлужебныйВызовСервера</CommonModule>
+			<CommonModule>КонсольКластераКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
@@ -281,18 +282,23 @@
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныйСписокИнформационныхБаз</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>ФайловаяБаза</CommonModule>
+			<ScheduledJob>ПолучениеСтатусовСеансовКонфигураторов</ScheduledJob>
 			<CommonCommand>ОткрытьНастройки</CommonCommand>
 			<CommandGroup>Настройки</CommandGroup>
 			<Constant>ПутьКФайлуСпискаИнформационныхБаз</Constant>
 			<CommonForm>ПутьКФайлуСпискаИнформационныхБаз</CommonForm>
-			<Catalog>ИнформационныеБазы</Catalog>
-			<Catalog>УчетныеДанные</Catalog>
 			<Catalog>ВерсииПлатформы</Catalog>
+			<Catalog>ИнформационныеБазы</Catalog>
+			<Catalog>Кластеры</Catalog>
+			<Catalog>Серверы</Catalog>
+			<Catalog>УчетныеДанные</Catalog>
 			<Enum>ТипыИнформационныхБаз</Enum>
 			<Enum>СкоростьСоединения</Enum>
 			<DataProcessor>СписокИнформационныхБаз</DataProcessor>
 			<DataProcessor>Настройки</DataProcessor>
 			<DataProcessor>ИмпортСтандартногоСписка</DataProcessor>
+			<InformationRegister>СтатусыСеансовКонфигураторов</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
